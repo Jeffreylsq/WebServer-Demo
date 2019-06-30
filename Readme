@@ -1,0 +1,13 @@
+Description:
+1. Core Module:
+Web Server : main class , accept client requests and distribution
+ServerContext : Save URL and name of Servlet class into Map , and use Reflect Theroy instantiate corresponding servlet
+ClientHandler: By using Server context , use reflect theroy, execute servlet;
+2.Http Module
+HttpContext: use dom4j parse XML document which have resource postfix and ContextType.
+HttpRequest: include request-line, header, context, and parse them
+HttpResponse: include status-line,response header, response context
+3 .Servlet Module
+HttpServlet : super class which have general characters
+RegServlet : processing register service, and save User INFO into data persistence layer
+LoginServlet, ChangeServlet
