@@ -1,0 +1,54 @@
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <title>User Sign Up</title>
+</head>
+<body>
+	<center>
+          
+		<h1>User Sign Up</h1>
+		
+		<!-- 
+		     If you want to upload text to server you have add form tag 
+		     form  contains specify path where you want to upload your texts
+		     form has two attribute
+		     action: specify path
+		     method：method for uploading（Get,Post)
+		     
+		 -->
+		<form action = "./reg" method = "get">
+		<table border = "15">
+		       <tr>
+		               <td>User Name:</td>
+		                 <!-- after we add form tag we have to add attribute name , so that server can use those upload value -->
+		                <td><input name = "username" type = "text"></td>
+		        </tr>
+		        <tr>
+		                <td>Nick Name:</td>
+		                  <td><input name = "nickname" type = "text"></td>
+		        </tr>
+		        
+		        <tr>
+		                <td>Age:</td>
+		                 <td><input name = "age" type = "text"></td> 
+		        </tr>
+		        
+		        <tr>
+		                 <td >password:</td>
+		                  <td><input name = "password" type = "password"></td> 
+		        </tr>
+		        <tr>
+		                 <td align = "center" colspan = "2">
+		                    <input type = "submit" size = "20" value = "Enroll in">
+		                   </td>
+		        </tr>
+		          
+		</table>
+      
+        </form>
+	</center>
+
+</body>
+
+</html>
